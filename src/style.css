@@ -10,7 +10,7 @@ body {
   --hover: #FFFFFF;
 }
 
-header {
+.header-moyo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +20,11 @@ header {
 }
 
 
-header .logo {
+.header-moyo .logo-moyo {
   height: 40px;
 }
 
-nav ul {
+.nav-list {
 
   list-style: none;
   display: flex;
@@ -32,20 +32,20 @@ nav ul {
   padding: 0;
 }
 
-nav ul > li {
+.nav-item {
   margin-left: 32px;
 }
 
-nav ul > li:first-child {
+.nav-item:first-child {
   margin-left: 0;
 
 }
 
-nav ul > li:last-child {
+.nav-item:last-child {
   margin-right: 0;
 }
 
-nav a {
+.nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,15 +60,16 @@ nav a {
 
 
 
-nav a:hover {
+.nav-link:hover {
+  color: var(--blue);
   text-decoration: underline;
   text-decoration-color: var(--blue);
 }
-nav a.is-active {
+.nav-link.is-active {
   color: var(--blue);
 }
 
-nav a.is-active::after {
+.nav-link.is-active::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -79,45 +80,45 @@ nav a.is-active::after {
 
 }
 
-nav a.is-blue {
+.nav-link.is-blue {
   color: var(--blue);
 }
 
 
 @media (max-width: 1200px) {
 
-  header {
+  .header-moyo {
     padding: 0 24px;
   }
 
-  nav ul > li {
+  .nav-item {
     margin-left: 24px;
   }
 
-  nav a {
+  .nav-link {
     font-size: 11px;
     height: 56px;
   }
-  .logo {
+  .logo-moyo {
     height: 36px;
   }
 }
 
 @media (max-width: 1024px) {
 
-  header {
+  .header-moyo {
     padding: 0 16px;
   }
 
-  nav ul > li {
+  .nav-item {
     margin-left: 16px;
   }
 
-  nav a {
+  .nav-link {
     font-size: 10px;
     height: 52px;
   }
-  .logo {
+  .logo-moyo {
     height: 32px;
   }
 }
