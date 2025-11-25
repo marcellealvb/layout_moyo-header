@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
 }
 
 :root {
   --blue: #00ACDC;
-  --text: #000000;
-  --hover: #FFFFFF;
+  --text: #000;
+  --hover: #FFF;
 }
 
 .header-moyo {
@@ -57,8 +57,6 @@ body {
   text-transform: uppercase;
   position: relative;
 }
-
-
 
 .nav-link:hover {
   color: var(--blue);
