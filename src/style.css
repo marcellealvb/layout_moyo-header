@@ -1,3 +1,123 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --blue: #00ACDC;
+  --text: #000000;
+  --hover: #FFFFFF;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--hover);
+  padding: 0 32px;
+}
+
+
+header .logo {
+  height: 40px;
+}
+
+nav ul {
+
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul > li {
+  margin-left: 32px;
+}
+
+nav ul > li:first-child {
+  margin-left: 0;
+
+}
+
+nav ul > li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: var(--text);
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+}
+nav a.is-active {
+  color: var(--blue);
+}
+
+nav a.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--blue);
+
+}
+
+nav a.is-blue {
+  color: var(--blue);
+}
+
+
+@media (max-width: 1200px) {
+
+  header {
+    padding: 0 24px;
+  }
+
+  nav ul > li {
+    margin-left: 24px;
+  }
+
+  nav a {
+    font-size: 11px;
+    height: 56px;
+  }
+  .logo {
+    height: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  header {
+    padding: 0 16px;
+  }
+
+  nav ul > li {
+    margin-left: 16px;
+  }
+
+  nav a {
+    font-size: 10px;
+    height: 52px;
+  }
+  .logo {
+    height: 32px;
+  }
 }
